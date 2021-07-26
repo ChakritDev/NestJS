@@ -1,4 +1,12 @@
 -- CreateTable
+CREATE TABLE "Department" (
+    "id" SERIAL NOT NULL,
+    "title" TEXT NOT NULL,
+
+    PRIMARY KEY ("id")
+);
+
+-- CreateTable
 CREATE TABLE "Position" (
     "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
@@ -11,7 +19,7 @@ CREATE TABLE "User" (
     "id" SERIAL NOT NULL,
     "email" TEXT NOT NULL,
     "password" TEXT NOT NULL,
-    "createdAr" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     PRIMARY KEY ("id")
 );

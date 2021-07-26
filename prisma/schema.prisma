@@ -45,5 +45,5 @@ model News {
   picture String @default("nopic.png")
   Staff   Staff  @relation(fields: [staffId], references: [id])
   staffId Int
-  // @@map("tbl_news") 
+  // @@map("tbl_news")
 }
